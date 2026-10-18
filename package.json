@@ -5,15 +5,15 @@
   "author": "Maikon",
   "private": true,
   "main": "electron/main.cjs",
-  "portaDoPrograma": 10395,
+  "portaDoPrograma": 9102,
   "devDependencies": {
     "electron": "33.2.1",
     "electron-builder": "25.1.8"
   },
   "build": {
-    "appId": "com.maikonadvogadomgalt.juridicoreplitconsertado18102.pc.nteste10181559",
-    "productName": "Juridico-Replit-consertado-18-10 (teste 10181559)",
-    "executableName": "juridico-replit-consertado-18-10-2-nteste10181559",
+    "appId": "com.maikonadvogadomgalt.juridicoreplitconsertado18102.pc.njuri4",
+    "productName": "Juridico-Replit-consertado-18-10 (juri4)",
+    "executableName": "juridico-replit-consertado-18-10-2-njuri4",
     "directories": {
       "output": "release"
     },
@@ -40,11 +40,11 @@
       "perMachine": false,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "Juridico-Replit-consertado-18-10 (teste 10181559)",
-      "artifactName": "juridico-replit-consertado-18-10-2-nteste10181559-Instalar.exe"
+      "shortcutName": "Juridico-Replit-consertado-18-10 (juri4)",
+      "artifactName": "juridico-replit-consertado-18-10-2-njuri4-Instalar.exe"
     },
     "portable": {
-      "artifactName": "juridico-replit-consertado-18-10-2-nteste10181559-sem-instalar.exe"
+      "artifactName": "juridico-replit-consertado-18-10-2-njuri4-sem-instalar.exe"
     }
   }
 }
