@@ -1,0 +1,23 @@
+name: Desktop (.exe)
+# O .exe sai em Actions → "Desktop (.exe)" → (a execução) → Artifacts → app-windows
+on:
+  workflow_dispatch:
+
+jobs:
+  exe:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Instalar as dependências
+        run: npm install --no-audit --no-fund
+      - name: Fazer o .exe
+        run: npx electron-builder --win portable --x64 --publish never
+      - uses: actions/upload-artifact@v4
+        with:
+          name: app-windows
+          path: release/*.exe
+          retention-days: 30

@@ -1,0 +1,6 @@
+{
+  "appId": "com.maikon.juridico.replit",
+  "appName": "Jurídico Replit",
+  "webDir": "www",
+  "android": { "allowMixedContent": true }
+}
