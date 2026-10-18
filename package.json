@@ -1,23 +1,50 @@
 {
   "name": "juridico-replit",
-  "version": "1.0.5",
-  "description": "Assistente IA Jurídico (versão do Replit)",
+  "version": "1.0.0",
+  "description": "Juridico-Replit-consertado-18-10 (2)",
   "author": "Maikon",
   "private": true,
   "main": "electron/main.cjs",
-  "portaDoPrograma": 7740,
+  "portaDoPrograma": 8124,
   "devDependencies": {
     "electron": "33.2.1",
     "electron-builder": "25.1.8"
   },
   "build": {
-    "appId": "com.maikon.juridico.replit",
-    "productName": "Juridico Replit",
-    "executableName": "Juridico-Replit",
-    "directories": { "output": "release" },
+    "appId": "com.maikonadvogadomgalt.juridicoreplitconsertado18102.pc.nplay",
+    "productName": "Juridico-Replit-consertado-18-10 (Play)",
+    "executableName": "juridico-replit-consertado-18-10-2-nplay",
+    "directories": {
+      "output": "release"
+    },
     "asar": false,
-    "files": ["electron/**", "www/**", "package.json"],
-    "win": { "target": ["portable"], "icon": "www/icon-512.png" },
-    "portable": { "artifactName": "Juridico-Replit.exe" }
+    "files": [
+      "**/*",
+      "!android/**",
+      "!.github/**",
+      "!release/**",
+      "!node_modules/.cache/**",
+      "!*.zip",
+      "!.sk/**",
+      "!apk.config.json"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "icons/icon-512.png"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Juridico-Replit-consertado-18-10 (Play)",
+      "artifactName": "juridico-replit-consertado-18-10-2-nplay-Instalar.exe"
+    },
+    "portable": {
+      "artifactName": "juridico-replit-consertado-18-10-2-nplay-sem-instalar.exe"
+    }
   }
 }
